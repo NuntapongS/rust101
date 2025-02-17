@@ -1,12 +1,11 @@
 use std::io;
 
 fn main() {
+    let mut guess = String::new();
     let x = 5;
     let y = 2;
 
     println!("The value of x is: {x} and y is: {y}");
-
-    let mut guess = String::new();
 
     println!("Guess the number!");
 
@@ -16,5 +15,5 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read line");
 
-    println!("You guessed: {}", guess);
+    println!("You guessed: {guess}");
 }
